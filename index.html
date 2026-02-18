@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="todo-container">
+        <h2 class="font-bangla">আমার ToDo List</h2>
+        <input style="margin: 5px 0 10px 0;" class="font-bangla" type="text" id="todo-input" placeholder="নতুন কাজ লিখুন...">
+        <button id="add-btn">যোগ করুন</button>
+        <div class="sort-buttons">
+            <button class="font-bangla" id="sort-newest">নতুন প্রথম</button>
+            <button class="font-bangla" id="sort-oldest">পুরানো প্রথম</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
