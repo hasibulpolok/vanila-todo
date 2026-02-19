@@ -1,4 +1,4 @@
-.font-bangla{
+.font-bangla {
     font-family: "Hind Siliguri", sans-serif;
 }
 
@@ -15,7 +15,7 @@ body {
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
 }
@@ -62,7 +62,8 @@ li button {
 li button:hover {
     background-color: #c82333;
 }
- .sort-buttons {
+
+.sort-buttons {
     margin-top: 10px;
 }
 
@@ -83,4 +84,13 @@ li.completed {
     color: gray;
 }
 
-
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
