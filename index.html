@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="bn">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- google font  -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="todo-container">
-        <h2 class="font-bangla">আমার ToDo List</h2>
-        <input style="margin: 5px 0 10px 0;" class="font-bangla" type="text" id="todo-input" placeholder="নতুন কাজ লিখুন...">
-        <button id="add-btn">যোগ করুন</button>
-        <div class="sort-buttons">
-            <button class="font-bangla" id="sort-newest">নতুন প্রথম</button>
-            <button class="font-bangla" id="sort-oldest">পুরানো প্রথম</button>
-        </div>
-        <ul id="todo-list"></ul>
+
+<div class="todo-container">
+    <h2 class="font-bangla">আমার ToDo List</h2>
+
+    <!-- Date & Time -->
+    <div id="datetime" class="font-bangla"></div>
+
+    <input class="font-bangla mb-3" type="text" id="todo-input" placeholder="নতুন কাজ লিখুন...">
+    <button id="add-btn" class="font-bangla mt-3">যোগ করুন</button>
+
+    <div class="sort-buttons">
+        <button class="font-bangla" id="sort-newest">নতুন প্রথম</button>
+        <button class="font-bangla" id="sort-oldest">পুরানো প্রথম</button>
     </div>
+
+    <ul id="todo-list"></ul>
+</div>
+
 <footer class="footer">
-    <p>@ All right reserved by Hasibul Polok 2026 - <script>document.write(new Date().getFullYear())</script>
-</p>
+    © Hasibul Polok 2026 - <span id="year"></span>
 </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

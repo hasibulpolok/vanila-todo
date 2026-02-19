@@ -8,9 +8,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;   /* changed from height */
+    margin: 0;
+    padding-bottom: 60px; /* prevent footer overlap */
 }
 
+/* Main Container */
 .todo-container {
     background-color: #fff;
     padding: 20px 30px;
@@ -20,6 +23,14 @@ body {
     text-align: center;
 }
 
+/* Date Time */
+#datetime {
+    margin: 10px 0 15px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Input */
 input[type="text"] {
     width: 70%;
     padding: 10px;
@@ -27,6 +38,7 @@ input[type="text"] {
     border: 1px solid #ddd;
 }
 
+/* Buttons */
 button {
     padding: 10px 15px;
     border: none;
@@ -40,6 +52,7 @@ button:hover {
     background-color: #218838;
 }
 
+/* Todo List */
 ul {
     list-style: none;
     padding-left: 0;
@@ -53,8 +66,15 @@ li {
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Delete Button */
 li button {
     background-color: #dc3545;
 }
@@ -63,6 +83,7 @@ li button:hover {
     background-color: #c82333;
 }
 
+/* Sort Buttons */
 .sort-buttons {
     margin-top: 10px;
 }
@@ -79,11 +100,7 @@ li button:hover {
     background-color: #0069d9;
 }
 
-li.completed {
-    text-decoration: line-through;
-    color: gray;
-}
-
+/* Footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -93,4 +110,12 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-size: 14px;
+}
+ input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
 }
